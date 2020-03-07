@@ -22,6 +22,8 @@ void InitializeDFS();
 
 void DFS(int j, circle_t cir1, bool visited[], int last);
 
+void closure(int step_j, circle_t cir1, const bool *visited, int last);
+
 void PrintCircle(circle_t cir1) {
     // traverse through cir1.num_of_elem
     setbuf(stdout, 0);
@@ -66,48 +68,50 @@ void InitializeDFS() {
 void DFS(int step_j, circle_t cir1, bool visited[], int last) {
     int startPos = (step_j) % 2;
     // determine traversal origin
+//    int EndPos = (circle_num_of_elem - 2) + startPos;
 
-    if (step_j != (circle_num_of_elem - 1)) {
-        int EndPos = (circle_num_of_elem - 2) + startPos;
+    int num_k, testPrime;
+//    for (num_k = startPos; num_k <= EndPos; num_k += 2) {
+    for (num_k = startPos; num_k < circle_num_of_elem; num_k += 2) {
+        if (visited[num_k])continue;
+        // number to select and add to the ring except the last one: n-1
+        // success enough times will break the for
+        // j is pos in circle, (k+1) is actual number
 
+//        testPrime = ((cir1[step_j - 1] + (num_k + 1)));
+        testPrime = last + (num_k + 1);
+        if (isPrime(testPrime)) {
+            // if this condition never called == no more number can be added
+            visited[num_k] = true;
+            cir1[step_j] = num_k + 1;
 
-        int num_k, testPrime;
-        for (num_k = startPos; num_k <= EndPos; num_k += 2) {
-            // for (num_k = startPos; num_k > 0;num_k-=2) {
-            if (visited[num_k])continue;
-            // number to select and add to the ring except the last one: n-1
-            // success enough times will break the for
-            // j is pos in circle, (k+1) is actual number
-
-            testPrime = ((cir1[step_j - 1] + (num_k + 1)));
-            if (isPrime(testPrime)) {
-                // if this condition never called == no more number can be added
-                visited[num_k] = true;
-                cir1[step_j] = num_k + 1;
-
+            if ((step_j + 1) != (circle_num_of_elem - 1))
                 DFS(step_j + 1, cir1, visited, num_k);  //go deeper to find circle
-            }
-            // end for adding edge
+            else
+                closure(step_j + 1, cir1, visited, num_k);//close the thing
+        }
+        // end for adding edge
 
-            // backtrack
-            visited[num_k] = false;
-        }  // end of k-loop
+        // backtrack
+        visited[num_k] = false;
+    }  // end of k-loop
+
+}
+
+void closure(int step_j, circle_t cir1, const bool *visited, int last) {
+    // find what is left in visited[]
+    int startPos = (step_j) % 2;
+    for (; startPos < circle_num_of_elem; startPos += 2) {
+        if (visited[startPos] == 0) break;
+    }
+
+    if ((!isPrime(startPos + 2))) { // startPos+1 and 1
         return;
     } else {
-        // find what is left in visited[]
-        for (; startPos < circle_num_of_elem; startPos += 2) {
-            if (visited[startPos] == 0) break;
+        if (isPrime(last + startPos + 2)) {  //check last one
+            cir1[step_j] = startPos + 1;
+            PrintCircle(cir1);
         }
-
-        if ((!isPrime(startPos + 2))) {
-            return;
-        } else {
-            if (isPrime(last + startPos + 2)) {  //check last one
-                cir1[step_j] = startPos + 1;
-                PrintCircle(cir1);
-            }
-        }
-        return;
     }
 }
 
