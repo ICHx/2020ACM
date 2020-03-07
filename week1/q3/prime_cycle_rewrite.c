@@ -1,28 +1,25 @@
 #include <stdbool.h>
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <time.h>
 
 #define N 20
 
-#if defined(WIN32) && !defined(__cplusplus)
-#define inline __inline
-#endif
-
-// static const char prime_array[] = {2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37};
+static const char prime_array[] = {2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37};
 //prime: 2..37, comp: 0..20+19 = 39
 static char prime_cache[40] = {0};
 static int circle_num_of_elem;
 
-struct Circle {
-    int array[N];
-};
-typedef struct Circle circle_t;
+//struct Circle {
+//    int array[N];
+//};
+//typedef struct Circle circle_t;
+typedef int *circle_t;
 
 void PrintCircle(circle_t cir1);
+
 bool isPrime(int n_test);
+
 void InitializeDFS();
+
 void DFS(int j, circle_t cir1, bool visited[], int last);
 
 void PrintCircle(circle_t cir1) {
@@ -32,7 +29,7 @@ void PrintCircle(circle_t cir1) {
     printf("%d ", 1);
 
     int *array_ptr;
-    array_ptr = &cir1.array[1];
+    array_ptr = &cir1[1];
 
     for (i = 1; i < (circle_num_of_elem - 1); i += 2) {  // 0..N-1
         printf("%d ", *array_ptr++);
@@ -60,8 +57,8 @@ bool isPrime(int num) {
 
 void InitializeDFS() {
     bool visited[N] = {0};  // 1 .. N
-    circle_t cir1;
-    cir1.array[0] = 1;
+    int cir1[N] = {0};
+    cir1[0] = 1;
     visited[0] = 1;
     DFS(1, cir1, visited, 0);
 }
@@ -75,18 +72,18 @@ void DFS(int step_j, circle_t cir1, bool visited[], int last) {
 
 
         int num_k, testPrime;
-        for (num_k = startPos; num_k <=EndPos;num_k+=2) {
-        // for (num_k = startPos; num_k > 0;num_k-=2) {
-            if(visited[num_k])continue;
+        for (num_k = startPos; num_k <= EndPos; num_k += 2) {
+            // for (num_k = startPos; num_k > 0;num_k-=2) {
+            if (visited[num_k])continue;
             // number to select and add to the ring except the last one: n-1
             // success enough times will break the for
             // j is pos in circle, (k+1) is actual number
 
-            testPrime = ((cir1.array[step_j - 1] + (num_k + 1)));
+            testPrime = ((cir1[step_j - 1] + (num_k + 1)));
             if (isPrime(testPrime)) {
                 // if this condition never called == no more number can be added
                 visited[num_k] = true;
-                cir1.array[step_j] = num_k + 1;
+                cir1[step_j] = num_k + 1;
 
                 DFS(step_j + 1, cir1, visited, num_k);  //go deeper to find circle
             }
@@ -106,7 +103,7 @@ void DFS(int step_j, circle_t cir1, bool visited[], int last) {
             return;
         } else {
             if (isPrime(last + startPos + 2)) {  //check last one
-                cir1.array[step_j] = startPos + 1;
+                cir1[step_j] = startPos + 1;
                 PrintCircle(cir1);
             }
         }

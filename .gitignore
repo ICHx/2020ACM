@@ -20,5 +20,7 @@ _deps
 *.sh
 .idea
 .lnk
-.swp
-.lnk
+*.swp
+*.lnk
+cmake-build-debug
+CMakeLists.txt
