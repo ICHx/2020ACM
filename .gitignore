@@ -12,7 +12,6 @@ _deps
 .history
 .vscode
 *.o
-*.docx
 *.txt
 *.log
 *.pdf
