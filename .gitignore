@@ -5,6 +5,7 @@ CMakeScripts
 Testing
 Makefile
 cmake_install.cmake
+cmake-build-debug
 install_manifest.txt
 compile_commands.json
 CTestTestfile.cmake
@@ -21,5 +22,7 @@ _deps
 .lnk
 *.swp
 *.lnk
-cmake-build-debug
-CMakeLists.txt
+*.class
+*.jar
+*.out
+

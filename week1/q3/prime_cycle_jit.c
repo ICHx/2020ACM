@@ -69,7 +69,9 @@ void DFS(int j, circle_t cir1, bool visited[]);
 
 void PrintCircle(circle_t cir1) {
     // traverse through cir1.num_of_elem
+#if DEBUG
     setbuf(stdout, 0);
+#endif
     int i;
     printf("%d ", 1);
 
