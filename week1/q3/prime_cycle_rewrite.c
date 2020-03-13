@@ -5,7 +5,7 @@
 #define N 20
 #define DEBUG 0
 
-static const char prime_array[] = {2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37};
+// static const char prime_array[] = {2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37};
 //prime: 2..37, comp: 0..20+19 = 39
 static char prime_cache[40] = {0};
 static int circle_num_of_elem;
@@ -31,13 +31,13 @@ void PrintCircle(circle_t cir1) {
     printf("%d ", 1);
     ++cir1;
 
-    for (i = 1; i < (circle_num_of_elem - 1); i += 2) {  // 0..N-1
+    for (i = 1; i < (circle_num_of_elem - 1); i += 2) {  // 0..N-2
         temp1 = *(cir1++);
         temp2 = *(cir1++);
         printf("%d %d ", temp1, temp2);
 //        printf("%d ", *(cir1++));
     }
-    printf("%d\n", *(cir1++));
+    printf("%d\n", *(cir1++)); //N-1
 }
 
 bool isPrime(int num) {
@@ -65,7 +65,7 @@ bool isPrime(int num) {
 //    DFS(1, cir1, visited, 0); //last is an index
 //}
 
-void DFS(int step_j, circle_t cir1, bool visited[], int last) {
+ __attribute__((hot))  void DFS(int step_j, circle_t cir1, bool visited[], int last) {
     int startPos = (step_j) % 2;
 
     int num_k, testPrime, next_step;
