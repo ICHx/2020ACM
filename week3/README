@@ -1,8 +1,21 @@
+
+This is the first time I am actually coding with Python, an easy to use dynamical typed language.
+And it is observed that PyPy perform extraordinarily bad in recursion.
+
+# Q1.
+First time noting that Python does not use curly braces(which is a set) as array, but [] instead.
+If subscript is added to {} element, it will exit saying "set is unsubscriptable".
+
+
 # Q2.
-This is the first time I am actually coding with Python, an easy to use dynamical typed language.\
+Recursion obviously has limitation on perform deep depth operation.
+The problem is exaggerated in the adoption of Python language, being interpreted.
+When N is large, not only it is slow, but the interpreter would use up CPU resources before failing with error output.
 
-Recursion obviously has limitation on perform deep depth operation.  \
-The problem is exaggerated in the adoption of Python language, being interpreted.  \
-When N is large, not only it is slow, but the interpreter would use up CPU resources before failing with error output.\
+Therefore, when deep depth operation is necessary, do not use interpreted language, otherwise, avoid recursion.
 
-Therefore, when deep depth operation is neccessary, do not use interpreted language, otherwise, avoid recursion.\
+# Q3.
+Slight different, has to change the polarity switch one step earlier.
+
+# Q4.
+

@@ -18,20 +18,20 @@ def sprint(input1, n):
 
 
 # manual test case
-# sprint(0, 3)
-# print()
-# sprint(1, 3)
-# print()
-# sprint(2, 3)
-# print()
-# sprint(3, 3)
-# print()
-# sprint(2, 3)
-# print()
-# sprint(1, 3)
-# print()
-# sprint(0, 3)
-# print()
+    # sprint(0, 3)
+    # print()
+    # sprint(1, 3)
+    # print()
+    # sprint(2, 3)
+    # print()
+    # sprint(3, 3)
+    # print()
+    # sprint(2, 3)
+    # print()
+    # sprint(1, 3)
+    # print()
+    # sprint(0, 3)
+    # print()
 
 # i is the number of digits to print, s is the polarity switch
 def recur(i, n, s):

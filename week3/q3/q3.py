@@ -113,7 +113,7 @@ def main():
         print()
         diamond(num, '#')
         print()
-        diamond(6, '@', '.')
+        diamond(num, '@', '.')
 
 
 main()

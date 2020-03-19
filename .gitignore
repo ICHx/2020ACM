@@ -25,4 +25,7 @@ _deps
 *.class
 *.jar
 *.out
-
+*~
+*.tmp
+*.bin
+*.bak
