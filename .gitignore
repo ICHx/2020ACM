@@ -29,3 +29,5 @@ _deps
 *.tmp
 *.bin
 *.bak
+*notmine*
+
