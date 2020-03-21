@@ -14,8 +14,16 @@ When N is large, not only it is slow, but the interpreter would use up CPU resou
 
 Therefore, when deep depth operation is necessary, do not use interpreted language, otherwise, avoid recursion.
 
+Currently implementation allow one recursion instance to print all the line, at the expense of performance and resource.  Although it is also simple split it, to do 2 recursion calls to respectively perform the inc and dec steps.
+
 # Q3.
 Slight different, has to change the polarity switch one step earlier.
+There is no overloading in Python, but there is innate support for varvargs.
 
 # Q4.
+Done in Java.
 
+The PPT gave a brief introduction to the algorithm.  The only problem is that the bounds need to be considered.
+To rememdy the oob problem, all 1s are marked as 1 in either the last row/column in the dp[][] array.
+
+This question also took me the longest time, due to my relutancy to review tedious and unfamiliar materials...

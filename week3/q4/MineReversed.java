@@ -67,7 +67,7 @@ public class MineReversed {
         }
 
         // output square coordinate and size
-        System.out.printf("The maximum square submatrix is at (%d,%d) with size %d\n", cCol, cRow, maxSize + 1);
+        System.out.printf("The maximum square submatrix is at (%d,%d) with size %d\n", cCol, cRow, maxSize);
 
         if (DEBUG)
             for (int i = 0; i < N; i++) {// row 0..N-1

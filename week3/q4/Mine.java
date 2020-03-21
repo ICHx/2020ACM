@@ -33,24 +33,25 @@ public class Mine {
 
         // dynamically find largest square
 
-        for (int i = 0; i < N; i++) {// row 0..N-1
-            for (int j = 0; j < N; j++) {// col 0..N-2
+        for (int i = N - 1; i >= 0; i--) {// row 0..N-1
+            for (int j = N - 1; j >= 0; j--) {// col 0..N-2
                 int current = m[i][j];
                 if (current == 0)
                     continue; // only want 1, don't want 0
                 else {
                     // fix for out-of-bound
-                    if (j == 0 || i == 0) {
+                    if (j == N-1 || i == N-1) {
                         dp[i][j] = 1;
                         continue;
                     }
                 }
 
                 // the comparison section
-                // essentially, going left, going up and then going diagonally up-left
+                // essentially, checking right, going up and then going diagonally up-left (all
+                // the last elements)
                 int temp;
-                temp = Math.min(dp[i][j - 1], dp[i - 1][j]);
-                temp = Math.min(temp, dp[i - 1][j - 1]);
+                temp = Math.min(dp[i][j + 1], dp[i + 1][j]);
+                temp = Math.min(temp, dp[i + 1][j + 1]);
                 // or use double min() : smallest = Math.min(a, Math.min(b, c));
                 temp += 1;
 
@@ -61,13 +62,11 @@ public class Mine {
                     cRow = i;
                     cCol = j;
                 }
-
-                // dp[i][j] = m[i][j];
             }
         }
 
         // output square coordinate and size
-        System.out.printf("The maximum square submatrix is at (%d,%d) with size %d\n", cCol, cRow, maxSize + 1);
+        System.out.printf("The maximum square submatrix is at (%d,%d) with size %d\n", cCol, cRow, maxSize);
 
         if (DEBUG)
             for (int i = 0; i < N; i++) {// row 0..N-1
