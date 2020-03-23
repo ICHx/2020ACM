@@ -15,7 +15,6 @@ def dragon(n=0, i=0, str1="F"):
         else:  # is 'F'
             str2 += substring[count % 2]
             count += 1
-
         pass
 
     str2 = dragon(n, i+1, str2)

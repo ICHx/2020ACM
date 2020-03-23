@@ -1,5 +1,5 @@
-#include <stdbool.h>
 #include <stdio.h>
+#include <stdbool.h>
 #include <string.h>
 
 #define N 20
@@ -56,14 +56,6 @@ bool isPrime(int num) {
     prime_cache[num] = 1;  //load on use
     return true;
 }
-
-//void InitializeDFS() {
-//    bool visited[N] = {0};  // 1 .. N
-//    int cir1[N] = {0};
-//    cir1[0] = 1;
-//    visited[0] = 1;
-//    DFS(1, cir1, visited, 0); //last is an index
-//}
 
  __attribute__((hot))  void DFS(int step_j, circle_t cir1, bool visited[], int last) {
     int startPos = (step_j) % 2;
@@ -150,10 +142,6 @@ int main(int argc, char const *argv[]) {
             continue;
         }
         circle_num_of_elem = temp;
-
-//        InitializeDFS();
-
-
         DFS(1, cir1, visited, 0); //last is an index
         puts("");//blank line after case
         //reset
