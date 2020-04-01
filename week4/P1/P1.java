@@ -28,7 +28,8 @@ public class P1 {
             // FOURTH REQ: LESS GREEDY
             // String entireGene4 = "ATG([ACTG]{3})*?TAG";
             // FIFTH REQ: TAA TAG or TGA
-            String entireGene1 = "ATG([ACTG]{3})*?(TAG|TAA|TGA)";
+            String entireGene1 = "ATG([ACTG]{3})+?(TAG|TAA|TGA)"; 
+            //exclude empty gene
 
             Pattern genePattern = Pattern.compile(entireGene1);
             Matcher geneMatcher = genePattern.matcher(gene);
