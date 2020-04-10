@@ -11,8 +11,8 @@ public class TestPrime3 {
     private static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
-        int n = sc.nextInt();
-
+        // int n = sc.nextInt();
+        int n = 100000;
         Instant start = Instant.now(); // JDK 8.0+
         // Do something
         for (int i = 0; i < 10; i++) {
@@ -35,16 +35,16 @@ public class TestPrime3 {
         int nPrime = 1;
         for (int i = 3; i <= n; i += 2) {
             boolean isPrime = true;
-            int maxFact = (int) (Math.sqrt(n) + 0.1);
+            int maxFact = (int) (Math.sqrt(i) + 0.1);
             for (int j = 3; j <= maxFact; j += 2) {
                 if (i % j == 0) {
                     isPrime = false;
                     break;
                 }
             }
-
-            if (isPrime)
+                if (isPrime)
                 nPrime++;
+
         }
         return nPrime;
     }

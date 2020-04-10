@@ -11,8 +11,8 @@ public class TestPrime2 {
     private static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
-        int n = sc.nextInt();
-
+        // int n = sc.nextInt();
+        int n=100000;
         Instant start = Instant.now(); // JDK 8.0+
         // Do something
         for (int i = 0; i < 10; i++) {
