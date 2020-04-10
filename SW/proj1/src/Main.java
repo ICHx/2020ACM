@@ -53,7 +53,6 @@ public class Main {
             return workList;
 
         } catch (FileNotFoundException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
             System.exit(2);
         }
