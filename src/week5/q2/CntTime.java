@@ -9,6 +9,7 @@ import java.util.Scanner;
 
 public class CntTime {
     public static void main(String[] args) throws FileNotFoundException {
+        System.out.println("choice:");
         Scanner in = new Scanner( System.in );
         cnt(in.nextInt());
         in.close();

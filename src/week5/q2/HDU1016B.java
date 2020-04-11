@@ -4,14 +4,16 @@ package week5.q2;
 // 
 import java.util.Scanner;
 public class HDU1016B {
+   public static final int DEBUG = 0;
    public static void main (String[] args) {
       initPrimeChecker();
       Scanner in = new Scanner( System.in );
       int count = 0;
       while (in.hasNext()) {
-         System.out.printf( "%sCase %d:\n", 
+         if (DEBUG == 1) {
+            System.out.printf( "%sCase %d:\n", 
             (count++ == 0 ? "" : "\n"),  count
-         );
+         );}else count++;
          
          int n = in.nextInt();
          if (n <= 1 || n % 2 == 1) continue;
@@ -46,9 +48,10 @@ public class HDU1016B {
    private static void outRingElements (int[] ring) {
       final int n = ring.length;
       for (int i = 0; i < n; i++)
+      if (DEBUG == 1) {
          System.out.printf( "%d%s", 
             ring[i],  i != n-1 ? " " : "\n"
-         );
+         );}
    }
 
    private static boolean isPrimeRing (int[] a) {

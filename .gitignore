@@ -31,3 +31,4 @@ _deps
 *.bak
 *notmine*
 
+*.~*
