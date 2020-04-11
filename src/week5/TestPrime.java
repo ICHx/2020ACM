@@ -8,11 +8,12 @@ import java.time.Duration;
  * TestPrime
  */
 public class TestPrime {
-    private static Scanner sc = new Scanner(System.in);
+    // private static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
+        int n = Integer.parseInt( args[0] );
         // int n = sc.nextInt();
-        int n = 5000000;
+        // int n = 5000000;
         Instant start = Instant.now(); // JDK 8.0+
         // Do something
         for (int i = 0; i < 10; i++) {
