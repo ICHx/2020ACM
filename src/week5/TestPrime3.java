@@ -12,7 +12,7 @@ public class TestPrime3 {
 
     public static void main(String[] args) {
         // int n = sc.nextInt();
-        int n = 100000;
+        int n = 5000000;
         Instant start = Instant.now(); // JDK 8.0+
         // Do something
         for (int i = 0; i < 10; i++) {
