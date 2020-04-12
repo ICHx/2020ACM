@@ -1,7 +1,7 @@
 package week5.q4;
 
 // A More Efficient Testing Framework
-public class TestMedianOf5Ints2 {
+public class TestMedianOf5IntsFaster {
   public static void main(String[] args) {
     for (int i = 1; i <= 5; i++) {
       for (int j = 1; j <= 5; j++) {
@@ -22,31 +22,49 @@ public class TestMedianOf5Ints2 {
               // code to find out median-of-5
 
               int[] list = { a, b, c, d, e };
-              int step=0;
               // selection sort(ish) alg with early pause
-              out: for (int key = 0; key < list.length; key++) {
-                int countSmaller = 0; // # smaller than key.
-                int countBigger = 0; // # bigger than key.
-                for (int test = 0; test < list.length; test++) {
-                  if(test==key)continue;
-                  
-                  if (list[key] > list[test]) {
-                    countSmaller++;
-                  } else {
-                    countBigger++;
-                  }
-                  step++;
-                  if(countSmaller>2||countBigger>2){
-                    continue out;
-                  }
-                }
-                    if(countSmaller==2){
-                      c=list[key];
-                      break out;
-                }
+              {
+                int temp = a+e;
+                a = Math.min(a,e);
+                e = temp - a;
+                
+                temp = c+e;
+                c = Math.min(c,e);
+                e = temp - c;
+                
+                temp = c+a;
+                a = Math.min(c,a);
+                c = temp - a;
+                
+                // ! now a<c<e
+                
+                // * now compare b,c,d
+                temp = b+c;
+                b = Math.min(c,b);
+                c = temp - b;
+                
+                temp = b+d;
+                b = Math.min(b,d);
+                d = temp - b;
+                
+                temp = c+d;
+                c = Math.min(c,d);
+                d = temp - c;
+                
+                // ! did not work when 3 is in corner
+                temp = a+e;
+                a = Math.min(a,e);
+                e = temp - a;
+                
+                temp = c+e;
+                c = Math.min(c,e);
+                e = temp - c;
+                
+                temp = c+a;
+                a = Math.min(c,a);
+                c = temp - a;
+                
               }
-
-              System.out.println("steps:" + step);
               // ...
               if (c != 3) {
                 System.out.printf( // another if style

@@ -14,6 +14,7 @@ public class TestMedianOf5Ints2 {
               int a=i, b=j, c=k, d=m, e=n;  
               // ...
               // code to find out median-of-5
+              
               // ...
               if (c != 3) System.out.printf(  // another if style
                 "[%d %d %d %d %d] ==> [%d %d %d %d %d]\n",
