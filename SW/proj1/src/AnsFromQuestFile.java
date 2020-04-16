@@ -12,12 +12,16 @@ public class AnsFromQuestFile {
         {
             float result = -1;
             for (int i=0; i < count; i++) {
-                
+                // file has number list, need splitting
                 String s[]=NList.get(i).split("]");
+                if(s.length<2){
+                    //invalid format
+                    FileOpr.FileErr();
+                }
                 
                 result = ParseQuiz.CalcString(s[1]);
                 System.out.printf("[%d] ", i + 1);
-                System.out.println(result);
+                System.out.printf("%.3f\n",result);
             }
         }
 

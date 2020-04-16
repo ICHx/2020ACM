@@ -5,10 +5,14 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import javax.swing.JFileChooser;
+
 public class FileOpr {
 
     public static ArrayList<Integer> SeedFileOpen() {
-        File text = new File("SW/proj1/src/case.txt");
+
+        File text = chooser();
+        // File text = new File("SW/proj1/src/case.txt");
 
         Scanner inFile;
         try {
@@ -20,7 +24,8 @@ public class FileOpr {
                 // ?String line = inFile.nextLine();
                 // could be changed from int to string
                 int line = inFile.nextInt();
-                System.out.println("line " + lineNumber + " :" + line);
+                if (Main.DEBUG == 1)
+                    System.out.println("line " + lineNumber + " :" + line);
                 workList.add(line);
                 lineNumber++;
             }
@@ -34,29 +39,23 @@ public class FileOpr {
         return null;
     }
 
-    public static void FruitFileStash(GenQuest entry[])  {
+    public static void FruitFileStash(GenQuest entry[]) {
 
-        File qF = new File("SW/proj1/src/problem.txt");
-        // File ansF = new File("SW/proj1/src/ans.txt");
-        
+        File qF = chooser();
+        // File qF = new File("SW/proj1/src/problem.txt");
+
         try {
-            
+
             FileWriter qFile = new FileWriter(qF);
-            // FileWriter aFile = new FileWriter(ansF);
-            
-            ArrayList<String> workList = new ArrayList<>();
-            String string=null;
+
+            String string = null;
             for (int i = 0; i < entry.length; i++) {
-                string = "["+(i+1)+"]" + entry[i];
-         
-                    qFile.append(string);
-  
+                string = "[" + (i + 1) + "]" + entry[i];
+
+                qFile.append(string);
+
                 qFile.write(System.getProperty("line.separator"));
-                
-                // //answer sheet
-                // string = "["+(i+1)+"] =";
-                // aFile.append(string);
-                // aFile.write(System.getProperty("line.separator"));
+
             }
             qFile.close();
             // aFile.close();
@@ -71,7 +70,8 @@ public class FileOpr {
 
     public static ArrayList<String> FruitFileOpen() {
 
-        File text = new File("SW/proj1/src/problem.txt");
+        File text = chooser();
+        // File text = new File("SW/proj1/src/problem.txt");
 
         Scanner inFile;
         try {
@@ -82,7 +82,8 @@ public class FileOpr {
             while (inFile.hasNextLine()) {
                 // need to be changed from int to string
                 String line = inFile.nextLine();
-                System.out.println("line " + lineNumber + " :" + line);
+                if (Main.DEBUG == 1)
+                    System.out.println("line " + lineNumber + " :" + line);
                 workList.add(line);
                 lineNumber++;
             }
@@ -95,8 +96,26 @@ public class FileOpr {
         }
         return null;
     }
-private static void FileErr() {
-    System.out.println("E2: Invalid file");
-    System.exit(2);
-}
+
+    public static void FileErr() {
+        System.out.println("E2: Invalid file or no file choosen");
+        System.exit(2);
+    }
+
+    private static File chooser() {
+        // source:
+        // https://www.codejava.net/java-se/swing/show-simple-open-file-dialog-using-jfilechooser
+        JFileChooser fileChooser = new JFileChooser();
+        fileChooser.setCurrentDirectory(new File(System.getProperty("user.dir")));
+        int result = fileChooser.showOpenDialog(null);
+        if (result == JFileChooser.APPROVE_OPTION) {
+            File selectedFile = fileChooser.getSelectedFile();
+            System.out.println("Selected file: " + selectedFile.getAbsolutePath());
+            return selectedFile;
+        } else {
+            FileErr();
+        }
+        return null;
+    }
+
 }
