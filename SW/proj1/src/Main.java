@@ -1,62 +1,43 @@
-import java.io.File;
-import java.io.FileNotFoundException;
 import java.util.ArrayList;
-import java.util.Scanner;
-
-/**
- * Main
- */
 
 public class Main {
     /*-
-     * REQ 1. Generate N numbers 
+     * REQ 1. Generate N numbers [done]
      * 1a. decimals 
      * 1b. fractions 
      * 1c. mixed fraction 带分数
      * 
-     * 2. Generate N-1 operators 
-     * 3. Later: do difficult definition
+     * 2. Generate N-1 operators [done]
+     * 3. Later: do difficult definition [done]
+     * 
+     * REQ 2. Read from String and solve the question
      */
 
     public static void main(String[] args) {
+        //menu
+        
+        
+        {
+            ArrayList<Integer> NList = FileOpr.SeedFileOpen();
 
-        // final int N = 3; // to be read from file: done
+            //TODO initialize count from file
 
-        Generate entry = new Generate();// construct with file stream
-        ArrayList<Integer> NList = Main.FileOpen();
-        for (Integer N : NList) {
-            //
-            entry.payload(N);
-        }
-
-    }
-
-    private static ArrayList<Integer> FileOpen() {
-        File text = new File("SW\\proj1\\src\\case.txt");
-        // File text = new
-        // File("C:\\Users\\ricts\\IdeaProjects\\2020ACM\\SW\\proj1\\src\\case.txt");
-        Scanner inFile;
-        try {
-            ArrayList<Integer> workList = new ArrayList<Integer>();
-            inFile = new Scanner(text);
-
-            int lineNumber = 1;
-            while (inFile.hasNextInt()) { //to has next() later
-                // TODO: String line = inFile.nextLine();
-                // will be changed from int to string
-                int line = inFile.nextInt();
-                System.out.println("line " + lineNumber + " :" + line);
-                workList.add(line);
-                lineNumber++;
+            int i = 0, count = NList.size();
+            Generate[] entry = new Generate[count];
+            for (Integer N : NList) {
+                //
+                if (N > 3 || N < 1) {
+                    //incorrect input of level
+                    System.out.println("E1: Invalid level :" + N);
+                    System.exit(1);
+                }
+                entry[i] = new Generate(N);
+                System.out.printf("[%d] ", i + 1);
+                System.out.println(entry[i].toString());
+                i++;
             }
-            inFile.close();
-            return workList;
-
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-            System.exit(2);
         }
-        return null;
+
     }
 
 }
