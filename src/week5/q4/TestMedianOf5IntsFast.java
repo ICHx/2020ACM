@@ -2,6 +2,8 @@ package week5.q4;
 
 // A More Efficient Testing Framework
 // algorithm wrt  http://mathcs.wilkes.edu/~bracken/cs328/fa2014/median5.pdf
+// https://cs.stackexchange.com/questions/10960/sort-array-of-5-integers-with-a-max-of-7-compares
+// ! not working
 public class TestMedianOf5IntsFast {
   public static void main(String[] args) {
     for (int i = 1; i <= 5; i++) {

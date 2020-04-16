@@ -1,15 +1,23 @@
 import java.util.ArrayList;
 
-public class Generate {
-    private int level = 1;
+
+public class GenQuest {
+    public static final int MAXLEVEL = 3;
+    
+    private int level = 1; // default level
     
     // initialize on creation
-    public Generate() {
-        // denote the level : from 1 to 3
+    public GenQuest() {
+        // denote the level : from 1 to MAXLEVEL
         payload(level);
     }
 
-    public Generate(int level) {
+    public GenQuest(int level) {
+        if (level > MAXLEVEL || level < 1) {
+            // incorrect input of level
+            System.out.println("E1: Invalid level :" + level);
+            System.exit(1);
+        }
         this.level = level;
         payload(level);
     }
