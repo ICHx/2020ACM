@@ -19,15 +19,11 @@ public class FileOpr {
             ArrayList<Integer> workList = new ArrayList<Integer>();
             inFile = new Scanner(text);
 
-            int lineNumber = 1;
             while (inFile.hasNextInt()) {
                 // ?String line = inFile.nextLine();
                 // could be changed from int to string
                 int line = inFile.nextInt();
-                if (Main.DEBUG == 1)
-                    System.out.println("line " + lineNumber + " :" + line);
                 workList.add(line);
-                lineNumber++;
             }
             inFile.close();
             return workList;
@@ -39,8 +35,55 @@ public class FileOpr {
         return null;
     }
 
-    public static void FruitFileStash(GenQuest entry[]) {
+    public static ArrayList<Quest> FruitFileOpen() {
 
+        File text = chooser();
+
+        Scanner inFile;
+        try {
+            ArrayList<Quest> workList = new ArrayList<>();
+            inFile = new Scanner(text);
+
+            while (inFile.hasNextLine()) {
+                // need to be changed from int to string
+                String line = inFile.nextLine();
+
+                if (line.equals("")) {
+                    continue;
+                }
+
+                if (line.substring(0, 1).equals("A")) {
+                    // Meeting answer: all questions are read already
+                    break;
+                }
+
+                line = line.substring(1);
+
+                String s[] = line.split("]");
+
+                if (s.length < 2) {
+                    //invalid format
+                    FileOpr.FileErr();
+                }
+
+                Quest entry = new Quest(s[1]);
+                int serial = Integer.parseInt(line.replaceAll("\\].*", ""));
+                entry.setSN(serial);
+
+                workList.add(entry);
+            }
+            inFile.close();
+            return workList;
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+            FileErr();
+        }
+        return null;
+    }
+
+    public static void FruitStash(Quest entry[]) {
+        //write problem file
         File qF = chooser();
         // File qF = new File("SW/proj1/src/problem.txt");
 
@@ -49,12 +92,13 @@ public class FileOpr {
             FileWriter qFile = new FileWriter(qF);
 
             String string = null;
+
             for (int i = 0; i < entry.length; i++) {
                 string = "[" + (i + 1) + "]" + entry[i];
 
                 qFile.append(string);
 
-                qFile.write(System.getProperty("line.separator"));
+                qFile.append(System.getProperty("line.separator"));
 
             }
             qFile.close();
@@ -68,37 +112,42 @@ public class FileOpr {
         }
     }
 
-    public static ArrayList<String> FruitFileOpen() {
+    public static void FruitSlicer(ArrayList<Quest> entry) {
+        //todo handle if already has answer[]
+        //TODO write problem file with answer
+        System.out.println("\nWhere to save the answers?");
+        File qF = chooser();
 
-        File text = chooser();
-        // File text = new File("SW/proj1/src/problem.txt");
-
-        Scanner inFile;
         try {
-            ArrayList<String> workList = new ArrayList<>();
-            inFile = new Scanner(text);
 
-            int lineNumber = 1;
-            while (inFile.hasNextLine()) {
-                // need to be changed from int to string
-                String line = inFile.nextLine();
-                if (Main.DEBUG == 1)
-                    System.out.println("line " + lineNumber + " :" + line);
-                workList.add(line);
-                lineNumber++;
+            FileWriter qFile = new FileWriter(qF);
+
+            qFile.append(System.getProperty("line.separator"));
+            qFile.append("Answers\n==========================================");
+            qFile.append(System.getProperty("line.separator"));
+
+            String string = null;
+            for (int i = 0; i < entry.size(); i++) {
+                string = "[" + entry.get(i).getSN() + "]" + entry.get(i) + "= " + entry.get(i).getAns();
+
+                qFile.append(string);
+
+                qFile.append(System.getProperty("line.separator"));
+
             }
-            inFile.close();
-            return workList;
-
+            qFile.close();
+            // aFile.close();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
             FileErr();
+        } catch (IOException e) {
+            e.printStackTrace();
+            FileErr();
         }
-        return null;
     }
 
     public static void FileErr() {
-        System.out.println("E2: Invalid file or no file choosen");
+        System.out.println("E2: Invalid file or no file chosen");
         System.exit(2);
     }
 

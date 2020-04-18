@@ -1,18 +1,30 @@
 import java.util.ArrayList;
 
 
-public class GenQuest {
+public class Quest {
     public static final int MAXLEVEL = 3;
+    private int level=1;
     
-    private int level = 1; // default level
+    //Serial, only important when importing questions from file
+    private int SERIAL=-1;
+    public void setSN(int SN) {
+        //for future references
+        this.SERIAL=SN;
+        return;
+    }
+    public int getSN() {
+        //for future references
+        return this.SERIAL;}
+    
+    
+    // initialize with generated question
+    public Quest(String Question) {
+        // denote the level : from 1 to MAXLEVEL
+        this.question=Question;
+    }
     
     // initialize on creation
-    public GenQuest() {
-        // denote the level : from 1 to MAXLEVEL
-        payload(level);
-    }
-
-    public GenQuest(int level) {
+    public Quest(int level) {
         if (level > MAXLEVEL || level < 1) {
             // incorrect input of level
             System.out.println("E1: Invalid level :" + level);
@@ -27,11 +39,25 @@ public class GenQuest {
         //for future references
         return question;
     }
+    
+    public void setAns(String ans) {
+        //for future references
+        this.answer=ans;
+        return;
+    }
+        public String getAns() {
+        //for future references
+        return this.answer;
+    }
 
     private String question;
+    private String answer;
+    
+    
+    
     final static char[] opr = { '+', '-', '*', '/' };
 
-    public void payload(int level) {
+    private void payload(int level) {
         int numOfElements = (int) ((level +1) * 1.5f);
         ArrayList<String> numbers = new ArrayList<>();
         ArrayList<Character> operators = new ArrayList<>();
@@ -62,12 +88,12 @@ public class GenQuest {
         this.question = this.AssemblyQuiz(numbers, operators);
     }
 
-    public static void generateNum(int choice, ArrayList<String> numbers) {
+    private void generateNum(int choice, ArrayList<String> numbers) {
         switch (choice) {
-            //  generate an int between 1 to 100
+            //  generate an int between 1 to 10^(level+1)
             case 0: {
                 int num1;
-                num1 = (int) (Math.random() * 100) + 1;
+                num1 = (int) (Math.random() * Math.pow(10,level+1) ) + 1;
                 numbers.add(String.valueOf(num1));
                 return;
             }
@@ -79,7 +105,7 @@ public class GenQuest {
                 float result = 0;
                 num1 = (int) (Math.random() * 100) + 1;
                 num2 = (int) (Math.random() * 10) + 1;
-                depth = (int) (Math.random() * 4) + 1;
+                depth = (int) (Math.random() * (level+2)) + 1;
                 depth = (int) Math.pow(10, depth);
                 result = (float) num1 / num2 * depth;
                 result = (int) result;
@@ -122,8 +148,7 @@ public class GenQuest {
         }
     }
 
-    // AssemblyQuiz is invoked by 
-    public String AssemblyQuiz(ArrayList<String> numbers, ArrayList<Character> operators) {
+    private String AssemblyQuiz(ArrayList<String> numbers, ArrayList<Character> operators) {
         StringBuilder workStr = new StringBuilder();
 
         for (int i = 0; i < operators.size(); i++) {

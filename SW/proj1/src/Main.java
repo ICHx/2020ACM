@@ -30,19 +30,19 @@ public class Main {
         {
             String choice = sc.nextLine().trim().toLowerCase();
             if (choice.equals("open")) {
-                AnsFromQuestFile.main(args);
+                SolveQuestFromFile.main(args);
                 return;
             }
         }
         ArrayList<Integer> NList = FileOpr.SeedFileOpen();
 
         int count = NList.size();
-        GenQuest[] entry = new GenQuest[count];
+        Quest[] entry = new Quest[count];
 
         {
             int i = 0;
             for (Integer N : NList) {
-                entry[i] = new GenQuest(N);
+                entry[i] = new Quest(N);
                 System.out.printf("[%d] ", i + 1);
                 System.out.println(entry[i]);
                 i++;
@@ -50,27 +50,30 @@ public class Main {
                 // ? System.out.println(entry[i].toString());
             }
         }
-        System.out.println("Save Problem?(y/n)");
-        String choice = sc.next().trim().toLowerCase();
-        if (choice.equals("y")) {
-            FileOpr.FruitFileStash(entry);
-        }
-        sc.nextLine();
-        // clear newline
 
-        System.out.println("Press Enter to reveal answer");
-        sc.nextLine();
-        System.out.println("=============================================");
         {
-            float result = -1;
-
-            for (int i = 0; i < entry.length; i++) {
-                // internal array has no number list
-                String workStr = entry[i].toString();
-                result = ParseQuiz.CalcString(workStr);
-                System.out.printf("[%d] ", i + 1);
-                System.out.printf("%.3f\n",result);
+            System.out.println("Save Problem?(y/n)");
+            String choice = sc.next().trim().toLowerCase();
+            if (choice.equals("y")) {
+                FileOpr.FruitStash(entry);
             }
+            sc.nextLine();
+            // clear newline
+
+        //     System.out.println("Press Enter to reveal answer");
+        //     sc.nextLine();
+        //     System.out.println("=============================================");
+        //     {
+        //         float result = -1;
+
+        //         for (int i = 0; i < entry.length; i++) {
+        //             // internal array has no number list
+        //             String workStr = entry[i].toString();
+        //             result = ParseQuiz.CalcString(workStr);
+        //             System.out.printf("[%d] ", i + 1);
+        //             System.out.printf("%.3f\n", result);
+        //         }
+        //     }
         }
 
     }
