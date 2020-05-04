@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="efd478a9-2162-4771-97d4-965a35a6b86f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/2020ACM.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SW/SW.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeSample/codeSample.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeSample/week2/week2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/codeSample/week7/week7.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tsui/common/DebugHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/week8/GenomeComp/Genomp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week1/week1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/week3/week3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1bMctODiIarmISweO53qWIFgFSc" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
+    <property name="extract.method.default.visibility" value="public" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Genomp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="week8.GenomeComp.Genomp" />
+      <module name="2020ACM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="week8.GenomeComp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Genomp" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="efd478a9-2162-4771-97d4-965a35a6b86f" name="Default Changelist" comment="" />
+      <created>1588445616510</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588445616510</updated>
+      <workItem from="1588445619666" duration="922000" />
+      <workItem from="1588475568757" duration="14086000" />
+      <workItem from="1588513456902" duration="14708000" />
+      <workItem from="1588556748017" duration="861000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="178" y="761" width="606" height="722" key="#Customize_Data_Views" timestamp="1588527450265">
+      <screen x="0" y="0" width="1080" height="1880" />
+    </state>
+    <state x="178" y="761" width="606" height="722" key="#Customize_Data_Views/0.0.1080.1880@0.0.1080.1880" timestamp="1588527450265" />
+    <state x="202" y="1008" key="#Inspections" timestamp="1588491262302">
+      <screen x="0" y="0" width="1080" height="1880" />
+    </state>
+    <state x="202" y="1008" key="#Inspections/0.0.1080.1880@0.0.1080.1880" timestamp="1588491262302" />
+    <state x="276" y="391" key="#Java_Type_Renderers" timestamp="1588490279668">
+      <screen x="0" y="0" width="1080" height="1880" />
+    </state>
+    <state x="276" y="391" key="#Java_Type_Renderers/0.0.1080.1880@0.0.1080.1880" timestamp="1588490279668" />
+    <state x="420" y="1313" width="624" height="290" key="#com.intellij.debugger.actions.ViewTextAction" timestamp="1588528390230">
+      <screen x="0" y="0" width="1080" height="1880" />
+    </state>
+    <state x="420" y="1313" width="624" height="290" key="#com.intellij.debugger.actions.ViewTextAction/0.0.1080.1880@0.0.1080.1880" timestamp="1588528390230" />
+    <state x="286" y="864" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1588445870569">
+      <screen x="0" y="0" width="1080" height="1880" />
+    </state>
+    <state x="286" y="864" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1080.1880@0.0.1080.1880" timestamp="1588445870569" />
+    <state x="362" y="541" key="#dotLink" timestamp="1588527353225">
+      <screen x="0" y="0" width="1080" height="1880" />
+    </state>
+    <state x="362" y="541" key="#dotLink/0.0.1080.1880@0.0.1080.1880" timestamp="1588527353225" />
+    <state x="56" y="832" key="#org.jetbrains.debugger.memory.view.InstancesWindow" timestamp="1588524387311">
+      <screen x="0" y="0" width="1080" height="1880" />
+    </state>
+    <state x="56" y="832" key="#org.jetbrains.debugger.memory.view.InstancesWindow/0.0.1080.1880@0.0.1080.1880" timestamp="1588524387311" />
+    <state x="476" y="1208" key="#xdebugger.evaluate" timestamp="1588524566290">
+      <screen x="0" y="0" width="1080" height="1880" />
+    </state>
+    <state x="476" y="1208" key="#xdebugger.evaluate/0.0.1080.1880@0.0.1080.1880" timestamp="1588524566290" />
+    <state width="419" height="466" key="DebuggerActiveHint" timestamp="1588514176474">
+      <screen x="0" y="0" width="1080" height="1880" />
+    </state>
+    <state width="419" height="466" key="DebuggerActiveHint/0.0.1080.1880@0.0.1080.1880" timestamp="1588514176474" />
+    <state width="1000" height="413" key="GridCell.Tab.-1.bottom" timestamp="1588477171405">
+      <screen x="0" y="0" width="1080" height="1880" />
+    </state>
+    <state width="1000" height="413" key="GridCell.Tab.-1.bottom/0.0.1080.1880@0.0.1080.1880" timestamp="1588477171405" />
+    <state width="1000" height="413" key="GridCell.Tab.-1.center" timestamp="1588477171405">
+      <screen x="0" y="0" width="1080" height="1880" />
+    </state>
+    <state width="1000" height="413" key="GridCell.Tab.-1.center/0.0.1080.1880@0.0.1080.1880" timestamp="1588477171405" />
+    <state width="1000" height="413" key="GridCell.Tab.-1.left" timestamp="1588477171405">
+      <screen x="0" y="0" width="1080" height="1880" />
+    </state>
+    <state width="1000" height="413" key="GridCell.Tab.-1.left/0.0.1080.1880@0.0.1080.1880" timestamp="1588477171405" />
+    <state width="1000" height="413" key="GridCell.Tab.-1.right" timestamp="1588477171405">
+      <screen x="0" y="0" width="1080" height="1880" />
+    </state>
+    <state width="1000" height="413" key="GridCell.Tab.-1.right/0.0.1080.1880@0.0.1080.1880" timestamp="1588477171405" />
+    <state width="1000" height="407" key="GridCell.Tab.0.bottom" timestamp="1588529612399">
+      <screen x="0" y="0" width="1080" height="1880" />
+    </state>
+    <state width="1000" height="407" key="GridCell.Tab.0.bottom/0.0.1080.1880@0.0.1080.1880" timestamp="1588529612399" />
+    <state width="1000" height="407" key="GridCell.Tab.0.center" timestamp="1588529612398">
+      <screen x="0" y="0" width="1080" height="1880" />
+    </state>
+    <state width="1000" height="407" key="GridCell.Tab.0.center/0.0.1080.1880@0.0.1080.1880" timestamp="1588529612398" />
+    <state width="1000" height="407" key="GridCell.Tab.0.left" timestamp="1588529612398">
+      <screen x="0" y="0" width="1080" height="1880" />
+    </state>
+    <state width="1000" height="407" key="GridCell.Tab.0.left/0.0.1080.1880@0.0.1080.1880" timestamp="1588529612398" />
+    <state width="1000" height="407" key="GridCell.Tab.0.right" timestamp="1588529612398">
+      <screen x="0" y="0" width="1080" height="1880" />
+    </state>
+    <state width="1000" height="407" key="GridCell.Tab.0.right/0.0.1080.1880@0.0.1080.1880" timestamp="1588529612398" />
+    <state width="1000" height="407" key="GridCell.Tab.1.bottom" timestamp="1588529612400">
+      <screen x="0" y="0" width="1080" height="1880" />
+    </state>
+    <state width="1000" height="407" key="GridCell.Tab.1.bottom/0.0.1080.1880@0.0.1080.1880" timestamp="1588529612400" />
+    <state width="1000" height="407" key="GridCell.Tab.1.center" timestamp="1588529612399">
+      <screen x="0" y="0" width="1080" height="1880" />
+    </state>
+    <state width="1000" height="407" key="GridCell.Tab.1.center/0.0.1080.1880@0.0.1080.1880" timestamp="1588529612399" />
+    <state width="1000" height="407" key="GridCell.Tab.1.left" timestamp="1588529612399">
+      <screen x="0" y="0" width="1080" height="1880" />
+    </state>
+    <state width="1000" height="407" key="GridCell.Tab.1.left/0.0.1080.1880@0.0.1080.1880" timestamp="1588529612399" />
+    <state width="1000" height="407" key="GridCell.Tab.1.right" timestamp="1588529612400">
+      <screen x="0" y="0" width="1080" height="1880" />
+    </state>
+    <state width="1000" height="407" key="GridCell.Tab.1.right/0.0.1080.1880@0.0.1080.1880" timestamp="1588529612400" />
+    <state x="19" y="771" key="SettingsEditor" timestamp="1588557620629">
+      <screen x="0" y="0" width="1080" height="1880" />
+    </state>
+    <state x="19" y="771" key="SettingsEditor/0.0.1080.1880@0.0.1080.1880" timestamp="1588557620629" />
+    <state width="530" height="458" key="XDebugger.FullValuePopup" timestamp="1588529091079">
+      <screen x="0" y="0" width="1080" height="1880" />
+    </state>
+    <state width="530" height="458" key="XDebugger.FullValuePopup/0.0.1080.1880@0.0.1080.1880" timestamp="1588529091079" />
+    <state x="58" y="60" width="1026" height="854" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1588492694812">
+      <screen x="0" y="0" width="1080" height="1880" />
+    </state>
+    <state x="58" y="60" width="1026" height="854" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1080.1880@0.0.1080.1880" timestamp="1588492694812" />
+    <state x="270" y="343" key="extract.method.dialog" timestamp="1588514756101">
+      <screen x="0" y="0" width="1080" height="1880" />
+    </state>
+    <state x="270" y="343" key="extract.method.dialog/0.0.1080.1880@0.0.1080.1880" timestamp="1588514756101" />
+    <state width="600" height="428" key="javadoc.popup" timestamp="1588519443570">
+      <screen x="0" y="0" width="1080" height="1880" />
+    </state>
+    <state width="600" height="428" key="javadoc.popup/0.0.1080.1880@0.0.1080.1880" timestamp="1588519443570" />
+    <state x="291" y="1000" width="612" height="281" key="org.intellij.images.editor.actions.BackgroundImageDialog" timestamp="1588557541414">
+      <screen x="0" y="0" width="1080" height="1880" />
+    </state>
+    <state x="291" y="1000" width="612" height="281" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1080.1880@0.0.1080.1880" timestamp="1588557541414" />
+    <state x="227" y="1201" width="672" height="678" key="search.everywhere.popup" timestamp="1588557439716">
+      <screen x="0" y="0" width="1080" height="1880" />
+    </state>
+    <state x="227" y="1201" width="672" height="678" key="search.everywhere.popup/0.0.1080.1880@0.0.1080.1880" timestamp="1588557439716" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/week8/GenomeComp/Genomp.java</url>
+          <line>118</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/week8/GenomeComp/Genomp.java</url>
+          <line>151</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
