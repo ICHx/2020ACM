@@ -6,6 +6,7 @@ Testing
 Makefile
 cmake_install.cmake
 cmake-build-debug
+out
 install_manifest.txt
 compile_commands.json
 CTestTestfile.cmake
@@ -18,8 +19,6 @@ _deps
 *.pdf
 *.exe
 *.sh
-.idea
-.lnk
 *.swp
 *.lnk
 *.class
@@ -32,3 +31,4 @@ _deps
 *notmine*
 
 *.~*
+*~$*
