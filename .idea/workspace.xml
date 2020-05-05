@@ -23,12 +23,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="efd478a9-2162-4771-97d4-965a35a6b86f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/week8/Q1/Annotation 2020-05-05 162750.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/week8/Q1/Annotation 2020-05-05 162750_12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/week8/Q1/schedule.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/week8/GenomeComp/Genomp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week8/GenomeComp/GenomeSim.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/week8/GenomeComp/progress.docx" beforeDir="false" afterPath="$PROJECT_DIR$/src/week8/GenomeComp/progress.docx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +66,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -87,9 +86,9 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.schedule">
     <configuration name="GenomeSim" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="week8.GenomeComp.GenomeSim" />
       <module name="2020ACM" />
@@ -103,8 +102,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="schedule" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="week8.Q1.schedule" />
+      <module name="2020ACM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="week8.Q1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.schedule" />
         <item itemvalue="Application.GenomeSim" />
       </list>
     </recent_temporary>
@@ -124,6 +137,12 @@
       <workItem from="1588513456902" duration="14708000" />
       <workItem from="1588556748017" duration="861000" />
       <workItem from="1588557643863" duration="6804000" />
+      <workItem from="1588655712335" duration="17000" />
+      <workItem from="1588655745091" duration="273000" />
+      <workItem from="1588656220419" duration="151000" />
+      <workItem from="1588656390432" duration="29000" />
+      <workItem from="1588656446589" duration="151000" />
+      <workItem from="1588656609217" duration="7040000" />
     </task>
     <task id="LOCAL-00001" summary="idea">
       <created>1588557976734</created>
@@ -155,8 +174,10 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="idea" />
     <MESSAGE value="genome_ex8" />
     <option name="LAST_COMMIT_MESSAGE" value="genome_ex8" />
@@ -180,6 +201,10 @@
       <screen x="0" y="0" width="1080" height="1880" />
     </state>
     <state x="420" y="1313" width="624" height="290" key="#com.intellij.debugger.actions.ViewTextAction/0.0.1080.1880@0.0.1080.1880" timestamp="1588528390230" />
+    <state x="358" y="482" key="#com.intellij.ide.util.MemberChooser" timestamp="1588664951188">
+      <screen x="0" y="0" width="1080" height="1880" />
+    </state>
+    <state x="358" y="482" key="#com.intellij.ide.util.MemberChooser/0.0.1080.1880@0.0.1080.1880" timestamp="1588664951188" />
     <state x="286" y="864" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1588445870569">
       <screen x="0" y="0" width="1080" height="1880" />
     </state>
@@ -228,46 +253,50 @@
       <screen x="0" y="0" width="1080" height="1880" />
     </state>
     <state width="1000" height="413" key="GridCell.Tab.-1.right/0.0.1080.1880@0.0.1080.1880" timestamp="1588477171405" />
-    <state width="1000" height="350" key="GridCell.Tab.0.bottom" timestamp="1588564527278">
+    <state width="500" height="457" key="GridCell.Tab.0.bottom" timestamp="1588667408267">
       <screen x="0" y="0" width="1080" height="1880" />
     </state>
-    <state width="1000" height="350" key="GridCell.Tab.0.bottom/0.0.1080.1880@0.0.1080.1880" timestamp="1588564527278" />
-    <state width="1000" height="350" key="GridCell.Tab.0.center" timestamp="1588564527278">
+    <state width="500" height="457" key="GridCell.Tab.0.bottom/0.0.1080.1880@0.0.1080.1880" timestamp="1588667408267" />
+    <state width="500" height="457" key="GridCell.Tab.0.center" timestamp="1588667408267">
       <screen x="0" y="0" width="1080" height="1880" />
     </state>
-    <state width="1000" height="350" key="GridCell.Tab.0.center/0.0.1080.1880@0.0.1080.1880" timestamp="1588564527278" />
-    <state width="1000" height="350" key="GridCell.Tab.0.left" timestamp="1588564527278">
+    <state width="500" height="457" key="GridCell.Tab.0.center/0.0.1080.1880@0.0.1080.1880" timestamp="1588667408267" />
+    <state width="500" height="457" key="GridCell.Tab.0.left" timestamp="1588667408267">
       <screen x="0" y="0" width="1080" height="1880" />
     </state>
-    <state width="1000" height="350" key="GridCell.Tab.0.left/0.0.1080.1880@0.0.1080.1880" timestamp="1588564527278" />
-    <state width="1000" height="350" key="GridCell.Tab.0.right" timestamp="1588564527278">
+    <state width="500" height="457" key="GridCell.Tab.0.left/0.0.1080.1880@0.0.1080.1880" timestamp="1588667408267" />
+    <state width="500" height="457" key="GridCell.Tab.0.right" timestamp="1588667408267">
       <screen x="0" y="0" width="1080" height="1880" />
     </state>
-    <state width="1000" height="350" key="GridCell.Tab.0.right/0.0.1080.1880@0.0.1080.1880" timestamp="1588564527278" />
-    <state width="1000" height="434" key="GridCell.Tab.1.bottom" timestamp="1588564527275">
+    <state width="500" height="457" key="GridCell.Tab.0.right/0.0.1080.1880@0.0.1080.1880" timestamp="1588667408267" />
+    <state width="695" height="282" key="GridCell.Tab.1.bottom" timestamp="1588667046623">
       <screen x="0" y="0" width="1080" height="1880" />
     </state>
-    <state width="1000" height="434" key="GridCell.Tab.1.bottom/0.0.1080.1880@0.0.1080.1880" timestamp="1588564527275" />
-    <state width="1000" height="434" key="GridCell.Tab.1.center" timestamp="1588564527275">
+    <state width="695" height="282" key="GridCell.Tab.1.bottom/0.0.1080.1880@0.0.1080.1880" timestamp="1588667046623" />
+    <state width="695" height="282" key="GridCell.Tab.1.center" timestamp="1588667046623">
       <screen x="0" y="0" width="1080" height="1880" />
     </state>
-    <state width="1000" height="434" key="GridCell.Tab.1.center/0.0.1080.1880@0.0.1080.1880" timestamp="1588564527275" />
-    <state width="1000" height="434" key="GridCell.Tab.1.left" timestamp="1588564527275">
+    <state width="695" height="282" key="GridCell.Tab.1.center/0.0.1080.1880@0.0.1080.1880" timestamp="1588667046623" />
+    <state width="695" height="282" key="GridCell.Tab.1.left" timestamp="1588667046623">
       <screen x="0" y="0" width="1080" height="1880" />
     </state>
-    <state width="1000" height="434" key="GridCell.Tab.1.left/0.0.1080.1880@0.0.1080.1880" timestamp="1588564527275" />
-    <state width="1000" height="434" key="GridCell.Tab.1.right" timestamp="1588564527275">
+    <state width="695" height="282" key="GridCell.Tab.1.left/0.0.1080.1880@0.0.1080.1880" timestamp="1588667046623" />
+    <state width="695" height="282" key="GridCell.Tab.1.right" timestamp="1588667046623">
       <screen x="0" y="0" width="1080" height="1880" />
     </state>
-    <state width="1000" height="434" key="GridCell.Tab.1.right/0.0.1080.1880@0.0.1080.1880" timestamp="1588564527275" />
+    <state width="695" height="282" key="GridCell.Tab.1.right/0.0.1080.1880@0.0.1080.1880" timestamp="1588667046623" />
+    <state x="230" y="1098" key="Performance.Activity.Monitor" timestamp="1588656465816">
+      <screen x="0" y="0" width="1080" height="1880" />
+    </state>
+    <state x="230" y="1098" key="Performance.Activity.Monitor/0.0.1080.1880@0.0.1080.1880" timestamp="1588656465816" />
     <state x="351" y="348" key="RollbackChangesDialog" timestamp="1588558023531">
       <screen x="0" y="0" width="1080" height="1880" />
     </state>
     <state x="351" y="348" key="RollbackChangesDialog/0.0.1080.1880@0.0.1080.1880" timestamp="1588558023531" />
-    <state x="82" y="1038" key="SettingsEditor" timestamp="1588559720782">
+    <state x="82" y="1038" key="SettingsEditor" timestamp="1588656597429">
       <screen x="0" y="0" width="1080" height="1880" />
     </state>
-    <state x="82" y="1038" key="SettingsEditor/0.0.1080.1880@0.0.1080.1880" timestamp="1588559720782" />
+    <state x="82" y="1038" key="SettingsEditor/0.0.1080.1880@0.0.1080.1880" timestamp="1588656597429" />
     <state x="133" y="379" key="Vcs.Push.Dialog.v2" timestamp="1588558070740">
       <screen x="0" y="0" width="1080" height="1880" />
     </state>
@@ -296,10 +325,10 @@
       <screen x="0" y="0" width="1080" height="1880" />
     </state>
     <state x="291" y="1000" width="612" height="281" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1080.1880@0.0.1080.1880" timestamp="1588557541414" />
-    <state x="227" y="1201" width="672" height="678" key="search.everywhere.popup" timestamp="1588563501829">
+    <state x="227" y="1201" width="672" height="678" key="search.everywhere.popup" timestamp="1588656271257">
       <screen x="0" y="0" width="1080" height="1880" />
     </state>
-    <state x="227" y="1201" width="672" height="678" key="search.everywhere.popup/0.0.1080.1880@0.0.1080.1880" timestamp="1588563501829" />
+    <state x="227" y="1201" width="672" height="678" key="search.everywhere.popup/0.0.1080.1880@0.0.1080.1880" timestamp="1588656271257" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -308,6 +337,16 @@
           <url>file://$PROJECT_DIR$/src/week8/GenomeComp/GenomeSim.java</url>
           <line>169</line>
           <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/week8/Q1/schedule.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/week8/Q1/schedule.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
