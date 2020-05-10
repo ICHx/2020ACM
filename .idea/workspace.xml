@@ -28,12 +28,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="efd478a9-2162-4771-97d4-965a35a6b86f" name="Default Changelist" comment="genome_ex8">
-      <change afterPath="$PROJECT_DIR$/src/week9/lineTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ArchiveOfMyWork/week5/TestPrime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ArchiveOfMyWork/week5/TestPrime2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ArchiveOfMyWork/week5/TestPrime3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ArchiveOfMyWork/week5/q1.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ArchiveOfMyWork/week5/q1data.ods" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ArchiveOfMyWork/week5/q2/CntTime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ArchiveOfMyWork/week5/q2/HDU1016A.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ArchiveOfMyWork/week5/q2/HDU1016B.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ArchiveOfMyWork/week5/q2/prime_cycle_rewrite.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ArchiveOfMyWork/week5/q2/q2.odt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ArchiveOfMyWork/week5/q2/test_result.ods" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ArchiveOfMyWork/week5/q3/Flags.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ArchiveOfMyWork/week5/q4/TestMedianOf5Ints2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ArchiveOfMyWork/week5/q4/TestMedianOf5IntsFast.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ArchiveOfMyWork/week5/q4/TestMedianOf5IntsFaster.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ArchiveOfMyWork/week5/q4/hljMedian.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ArchiveOfMyWork/week5/time_count" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ArchiveOfMyWork/week7/q1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ArchiveOfMyWork/week7/q1coinChange.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ArchiveOfMyWork/week7/q2/Progress.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ArchiveOfMyWork/week7/q2/running.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ArchiveOfMyWork/week7/q2/running.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ArchiveOfMyWork/week7/q3/drawers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ArchiveOfMyWork/week7/q3/q3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/week9/Vec.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/week9/Line.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week9/Line.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/week9/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week9/Point.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/week9/PolyDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week9/PolyDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/week9/PolyGon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week9/Polygon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/week9/Polygon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week9/Polygon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/week9/lineTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week9/lineTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +120,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -217,6 +241,7 @@
       <workItem from="1588991092776" duration="1488000" />
       <workItem from="1589024751991" duration="2483000" />
       <workItem from="1589040320122" duration="1035000" />
+      <workItem from="1589108365219" duration="33000" />
     </task>
     <task id="LOCAL-00001" summary="idea">
       <created>1588557976734</created>
@@ -467,7 +492,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/week9/PolyDriver.java</url>
-          <line>15</line>
+          <line>24</line>
           <option name="timeStamp" value="35" />
         </line-breakpoint>
       </breakpoints>

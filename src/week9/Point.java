@@ -1,9 +1,11 @@
 package week9;
+import static java.lang.Math.*;
 
 public class Point implements Comparable<Point> {
     static final double EPS = 1e-9;
     double x;
     double y;
+    Point p = this;
     
     Point(){}
     
@@ -27,6 +29,18 @@ public class Point implements Comparable<Point> {
         if ((cmpY) > EPS) {
             return (1);
         } else return -1;
+    }
+    
+    public Point rotate(double degree){
+        //rotate counterclockwise(ly)
+        Point p2p=null;
+        double px,py;
+        double rad = toRadians(degree);
+        px = p.x * cos(rad) - p.y * sin(rad);
+        py = p.x * sin(rad) + p.y * cos(rad);
+        p2p = new Point(px,py);
+        
+        return p2p;
     }
     
     @Override

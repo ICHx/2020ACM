@@ -17,7 +17,7 @@ public class PolyDriver {
 
     public static void main(String[] args) {
 
-        // polygon init.
+        // get a polygon.
         System.out.println("Enter Polygon sides#");
         int N = sc.nextInt();
         Point[] points = new Point[N];
@@ -26,7 +26,6 @@ public class PolyDriver {
         for (int i = 0; i < N; i++) {
             points[i] = new Point(sc.nextDouble(), sc.nextDouble());
         }
-        // finish polygon init.
 
         if (!sc.next().equals("==="))
             System.exit(-1);
@@ -36,5 +35,37 @@ public class PolyDriver {
         Point q = new Point(sc.nextDouble(), sc.nextDouble());
 
         Polygon P = new Polygon(points);
+        
+        Point Pt = findMinIntersects(P, q);
+        
+        //finish
+        System.out.println(Pt);
+    }
+    
+    
+    public static Point findMinIntersects(Polygon P, Point q) {
+        boolean inside = P.ptInPolygon(q); //class polygon
+        //TODO inside polygon
+        
+        Point outsideR = new Point(1000,1000); // a point outside R
+        Point origin = new Point(0,0);
+        Line outSide = new Line(outsideR, origin);
+        double angle = 0;
+        
+        
+        if(inside){
+            for (int i = 0; i < 360; i++) {
+                //rotate line
+                outSide = outSide.rotate(angle + i);
+                
+            }
+            
+            
+        }
+        else{
+            //find range of vertices angle , any angle outside the range is fine
+        }
+        
+        return null;
     }
 }

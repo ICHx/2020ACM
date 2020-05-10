@@ -1,10 +1,9 @@
 package week9;
 
 import static java.lang.Math.abs;
-import static week9.Point.EPS;
-
 
 public class Line {
+    static final double EPS = 1e-9;
     Point p1;
     Point p2;
     double slope;
@@ -22,17 +21,27 @@ public class Line {
 
         pointsToLine();
     }
-
+    
+@Override
+    public String toString(){
+        return String.format("\n Line: %.2g x + %.2g y + %.2g = 0\n", a,b,c);
+    }
+    
     private void pointsToLine() {
         if (abs(p1.x - p2.x) < EPS) {
             this.a = 1;
             this.b = 0;
             this.c = -p1.x;
+            
+            if(abs(this.c) < EPS) this.c = 0;
+            
             return;
         }
         this.a = -this.slope;
+        if(abs(this.a) < EPS) this.a = 0;
         this.b = 1;
         this.c = this.slope * p1.x - p1.y;
+        if(abs(this.c) < EPS) this.c = 0;
     }
 
     private void getSlope() {
@@ -71,6 +80,16 @@ public class Line {
         Point p = new Point(px, py);
         return p;
 
+    }
+    
+    public Line rotate(double degree){
+        // rotate line
+        Line newLine;
+        Point p1p = p1.rotate(degree);
+        Point p2p = p2.rotate(degree);
+        newLine = new Line(p1p, p2p);
+        
+        return newLine;
     }
 
     public Point midPt() {
