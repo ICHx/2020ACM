@@ -1,7 +1,5 @@
 package week10;
 
-import java.util.Stack;
-
 public class testSearch {
 
 public static void main(String[] args) {

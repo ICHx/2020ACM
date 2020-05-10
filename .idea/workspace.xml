@@ -28,72 +28,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="efd478a9-2162-4771-97d4-965a35a6b86f" name="Default Changelist" comment="genome_ex8">
-      <change afterPath="$PROJECT_DIR$/src/week10/Graf.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/week10/testDFS.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/week10/testSearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/week8/week8.7z" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/week9/Line.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/week9/Point.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/week9/PolyDriver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/week9/PolyGon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/week9/lineTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/week8/Q2/q2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week8/Q2/q2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/week1/ACM001/acm001" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week1/ACM001/acm001.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week1/ACM001/hello.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week1/ACM001/註解 2020-03-03 231225.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week1/ACM002/ACM002.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week1/ACM002/ACM002.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week1/ACM002/Hello.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week1/ACM002/註解 2020-03-03 231050.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week1/q3/GeneratePrime.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week1/q3/prime_cycle_before_improve_stack.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week1/q3/prime_cycle_jit.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week1/q3/prime_cycle_rewrite.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week1/q3/progress.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week1/q3/week1 - 捷徑.lnk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week1/q4/.notMine/notMine.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week1/q4/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week1/q4/Screenshot_20200308_115310.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week1/q4/Screenshot_20200308_115513.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week1/q4/Screenshot_20200308_115537.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week1/q4/case" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week1/week1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week2/FunctionGrowthWithBigInteger.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week2/UVa10925.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week2/q1/leetcode 2 pow.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week2/q1/q1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week2/q1/q1.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week2/q1/q1.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week2/q1/q1_header_node.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week2/q2/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week2/q2/pow-square_root.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week2/q3_self/43multiplyStrings.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week2/q3_self/43multiplyStrings_void.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week2/q3_self/pow.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week3/README" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week3/dynamicProgramming/cs-dojo_fibonacci.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week3/dynamicProgramming/memorization.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week3/q1_Dragon/dragon.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week3/q1_Dragon/pow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week3/q1_Dragon/python_runtime_compare" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week3/q2/Screenshot_20200317_223304.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week3/q2/Screenshot_20200317_223436.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week3/q2/q2-iteration.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week3/q2/q2-recur.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week3/q3/q3.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week3/q3/q3pow.odt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week3/q4/Mine.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week3/q4/MineReversed.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week3/q4/Screenshot_20200321_204529.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week3/week3.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week4/P1/P1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week4/P1/註解 2020-03-26 200452.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week4/P2/Answer.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week4/P2/p2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week4/Q4/Solution.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week4/Q4/註解 2020-03-28 143910.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/week4/p3.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/week9/Line.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week9/Line.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/week9/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week9/Point.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/week9/PolyDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week9/PolyDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/week9/PolyGon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/week9/Polygon.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,6 +56,9 @@
         <option value="git@github.com:ICHx/2020ACM" />
       </set>
     </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/week9/Point.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -153,20 +96,22 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Users\devop\git\2020ACM\ArchiveOfMyWork" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.testSearch">
-    <configuration name="GenomeSim" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="week8.GenomeComp.GenomeSim" />
+  <component name="RunManager" selected="Application.lineTest">
+    <configuration name="PolyDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="week9.PolyDriver" />
       <module name="2020ACM" />
+      <option name="REDIRECT_INPUT" value="true" />
+      <option name="INPUT_FILE" value="$PROJECT_DIR$/src/week9/test1.txt" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="week8.GenomeComp.*" />
+          <option name="PATTERN" value="week9.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -174,11 +119,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PolyDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="week9.PolyDriver" />
+    <configuration name="lineTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="week9.lineTest" />
       <module name="2020ACM" />
-      <option name="REDIRECT_INPUT" value="true" />
-      <option name="INPUT_FILE" value="$PROJECT_DIR$/src/week9/test1.txt" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="week9.*" />
@@ -229,19 +172,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.GenomeSim" />
       <item itemvalue="Application.PolyDriver" />
       <item itemvalue="Application.q2" />
       <item itemvalue="Application.schedule" />
       <item itemvalue="Application.testSearch" />
+      <item itemvalue="Application.lineTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.lineTest" />
         <item itemvalue="Application.testSearch" />
         <item itemvalue="Application.PolyDriver" />
         <item itemvalue="Application.q2" />
         <item itemvalue="Application.schedule" />
-        <item itemvalue="Application.GenomeSim" />
       </list>
     </recent_temporary>
   </component>
@@ -268,6 +211,12 @@
       <workItem from="1588656609217" duration="9402000" />
       <workItem from="1588762757939" duration="12619000" />
       <workItem from="1588842272924" duration="9229000" />
+      <workItem from="1588988848704" duration="1816000" />
+      <workItem from="1588990738280" duration="241000" />
+      <workItem from="1588990994664" duration="85000" />
+      <workItem from="1588991092776" duration="1488000" />
+      <workItem from="1589024751991" duration="2483000" />
+      <workItem from="1589040320122" duration="1035000" />
     </task>
     <task id="LOCAL-00001" summary="idea">
       <created>1588557976734</created>
@@ -338,10 +287,10 @@
       <screen x="0" y="0" width="1080" height="1880" />
     </state>
     <state x="0" y="304" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1080.1880@0.0.1080.1880" timestamp="1588818771046" />
-    <state x="358" y="482" key="#com.intellij.ide.util.MemberChooser" timestamp="1588851370056">
+    <state x="358" y="482" key="#com.intellij.ide.util.MemberChooser" timestamp="1589037460275">
       <screen x="0" y="0" width="1080" height="1880" />
     </state>
-    <state x="358" y="482" key="#com.intellij.ide.util.MemberChooser/0.0.1080.1880@0.0.1080.1880" timestamp="1588851370056" />
+    <state x="358" y="482" key="#com.intellij.ide.util.MemberChooser/0.0.1080.1880@0.0.1080.1880" timestamp="1589037460275" />
     <state x="257" y="987" key="#com.intellij.refactoring.encapsulateFields.EncalpsulateFieldsDialog" timestamp="1588844113531">
       <screen x="0" y="0" width="1080" height="1880" />
     </state>
@@ -350,6 +299,10 @@
       <screen x="0" y="0" width="1080" height="1880" />
     </state>
     <state x="286" y="864" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1080.1880@0.0.1080.1880" timestamp="1588445870569" />
+    <state x="370" y="292" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1588990630373">
+      <screen x="0" y="0" width="1080" height="1880" />
+    </state>
+    <state x="370" y="292" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1080.1880@0.0.1080.1880" timestamp="1588990630373" />
     <state x="362" y="541" key="#dotLink" timestamp="1588527353225">
       <screen x="0" y="0" width="1080" height="1880" />
     </state>
@@ -394,22 +347,22 @@
       <screen x="0" y="0" width="1080" height="1880" />
     </state>
     <state width="1000" height="413" key="GridCell.Tab.-1.right/0.0.1080.1880@0.0.1080.1880" timestamp="1588477171405" />
-    <state width="1000" height="479" key="GridCell.Tab.0.bottom" timestamp="1588854062262">
+    <state width="1026" height="157" key="GridCell.Tab.0.bottom" timestamp="1589037816221">
       <screen x="0" y="0" width="1080" height="1880" />
     </state>
-    <state width="1000" height="479" key="GridCell.Tab.0.bottom/0.0.1080.1880@0.0.1080.1880" timestamp="1588854062262" />
-    <state width="1000" height="479" key="GridCell.Tab.0.center" timestamp="1588854062262">
+    <state width="1026" height="157" key="GridCell.Tab.0.bottom/0.0.1080.1880@0.0.1080.1880" timestamp="1589037816221" />
+    <state width="1026" height="157" key="GridCell.Tab.0.center" timestamp="1589037816221">
       <screen x="0" y="0" width="1080" height="1880" />
     </state>
-    <state width="1000" height="479" key="GridCell.Tab.0.center/0.0.1080.1880@0.0.1080.1880" timestamp="1588854062262" />
-    <state width="1000" height="479" key="GridCell.Tab.0.left" timestamp="1588854062262">
+    <state width="1026" height="157" key="GridCell.Tab.0.center/0.0.1080.1880@0.0.1080.1880" timestamp="1589037816221" />
+    <state width="1026" height="157" key="GridCell.Tab.0.left" timestamp="1589037816221">
       <screen x="0" y="0" width="1080" height="1880" />
     </state>
-    <state width="1000" height="479" key="GridCell.Tab.0.left/0.0.1080.1880@0.0.1080.1880" timestamp="1588854062262" />
-    <state width="1000" height="479" key="GridCell.Tab.0.right" timestamp="1588854062262">
+    <state width="1026" height="157" key="GridCell.Tab.0.left/0.0.1080.1880@0.0.1080.1880" timestamp="1589037816221" />
+    <state width="1026" height="157" key="GridCell.Tab.0.right" timestamp="1589037816221">
       <screen x="0" y="0" width="1080" height="1880" />
     </state>
-    <state width="1000" height="479" key="GridCell.Tab.0.right/0.0.1080.1880@0.0.1080.1880" timestamp="1588854062262" />
+    <state width="1026" height="157" key="GridCell.Tab.0.right/0.0.1080.1880@0.0.1080.1880" timestamp="1589037816221" />
     <state width="1000" height="479" key="GridCell.Tab.1.bottom" timestamp="1588854062262">
       <screen x="0" y="0" width="1080" height="1880" />
     </state>
@@ -430,14 +383,22 @@
       <screen x="0" y="0" width="1080" height="1880" />
     </state>
     <state x="230" y="1098" key="Performance.Activity.Monitor/0.0.1080.1880@0.0.1080.1880" timestamp="1588656465816" />
+    <state x="213" y="224" width="771" height="768" key="Registry" timestamp="1588989137442">
+      <screen x="0" y="0" width="1080" height="1880" />
+    </state>
+    <state x="213" y="224" width="771" height="768" key="Registry/0.0.1080.1880@0.0.1080.1880" timestamp="1588989137442" />
     <state x="351" y="348" key="RollbackChangesDialog" timestamp="1588558023531">
       <screen x="0" y="0" width="1080" height="1880" />
     </state>
     <state x="351" y="348" key="RollbackChangesDialog/0.0.1080.1880@0.0.1080.1880" timestamp="1588558023531" />
-    <state x="82" y="1038" key="SettingsEditor" timestamp="1588656597429">
+    <state x="64" y="596" key="SettingsEditor" timestamp="1589041461388">
       <screen x="0" y="0" width="1080" height="1880" />
     </state>
-    <state x="82" y="1038" key="SettingsEditor/0.0.1080.1880@0.0.1080.1880" timestamp="1588656597429" />
+    <state x="64" y="596" key="SettingsEditor/0.0.1080.1880@0.0.1080.1880" timestamp="1589041461388" />
+    <state width="498" height="452" key="SwitcherDM" timestamp="1589040535992">
+      <screen x="0" y="0" width="1080" height="1880" />
+    </state>
+    <state width="498" height="452" key="SwitcherDM/0.0.1080.1880@0.0.1080.1880" timestamp="1589040535992" />
     <state x="133" y="379" key="Vcs.Push.Dialog.v2" timestamp="1588558070740">
       <screen x="0" y="0" width="1080" height="1880" />
     </state>
@@ -466,10 +427,10 @@
       <screen x="0" y="0" width="1080" height="1880" />
     </state>
     <state x="291" y="1000" width="612" height="281" key="org.intellij.images.editor.actions.BackgroundImageDialog/0.0.1080.1880@0.0.1080.1880" timestamp="1588557541414" />
-    <state x="227" y="1201" width="672" height="678" key="search.everywhere.popup" timestamp="1588843213704">
+    <state x="227" y="1201" width="672" height="678" key="search.everywhere.popup" timestamp="1589041507903">
       <screen x="0" y="0" width="1080" height="1880" />
     </state>
-    <state x="227" y="1201" width="672" height="678" key="search.everywhere.popup/0.0.1080.1880@0.0.1080.1880" timestamp="1588843213704" />
+    <state x="227" y="1201" width="672" height="678" key="search.everywhere.popup/0.0.1080.1880@0.0.1080.1880" timestamp="1589041507903" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -506,7 +467,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/week9/PolyDriver.java</url>
-          <line>18</line>
+          <line>15</line>
           <option name="timeStamp" value="35" />
         </line-breakpoint>
       </breakpoints>
