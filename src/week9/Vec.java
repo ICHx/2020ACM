@@ -1,4 +1,5 @@
 package week9;
+import static java.lang.Math.*;
 
 public class Vec {
     private double _x, _y;
@@ -31,5 +32,15 @@ public class Vec {
         return A._x*A._x + A._y * A._y ;
     }
     
+    public double norm(){
+        return sqrt(norm_sq()) ;
+    }
+    
+    public static double angle(Point q, Vec v1, Vec v2){
+        double dot = v1.dotProdWith(v2);
+        double norm = v1.norm() * v2.norm();
+        
+        return acos(dot/norm);
+    }
 
 }

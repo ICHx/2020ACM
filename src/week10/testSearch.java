@@ -13,7 +13,7 @@ public static void main(String[] args) {
 //g.insEdge(5,4);
 //
     //cycle
-    Graf g = new Graf(5, false);
+    Graf1 g = new Graf1(5, false);
     g.insEdge(1,2);
     g.insEdge(1,4);
     g.insEdge(2,3);

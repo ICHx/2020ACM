@@ -93,10 +93,10 @@ public class Line {
     }
 
     public Point midPt() {
-        Point midpt = new Point();
-        midpt.x = (p1.x + p2.x) / 2;
-        midpt.y = (p1.y + p2.y) / 2;
-        return midpt;
+        Point midPt = new Point();
+        midPt.x = (p1.x + p2.x) / 2;
+        midPt.y = (p1.y + p2.y) / 2;
+        return midPt;
     }
 
 }

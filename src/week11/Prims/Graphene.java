@@ -1,19 +1,19 @@
-package week11.Kruskals;
+package week11.Prims;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
 
 public class Graphene {
-    private ArrayList<Integer> vertices;
-    private EdgeList[] edgeList;
-    private int vertexCount = 0;
+    ArrayList<Integer> vertices;
+    EdgeList[] edgeList;
+    int vNum = 0;
     
-    public Graphene(int vertexCount) {
-        this.vertexCount = vertexCount;
+    public Graphene(int vNum) {
+        this.vNum = vNum;
         this.vertices = new ArrayList<>();
-        edgeList = new EdgeList[vertexCount];
+        edgeList = new EdgeList[vNum];
         
-        for (int i = 0; i < vertexCount; i++) {
+        for (int i = 0; i < vNum; i++) {
             vertices.add(i);
             edgeList[i] = new EdgeList();
         }
@@ -55,7 +55,7 @@ class EdgeList extends LinkedList<Edge> {
 }
 
 class Edge {
-    int dest = -1;
+    int dest = -1; //destination of edge
     int weight = -1;
     
     Edge(int dest, int weight) {
